@@ -49,7 +49,7 @@ loop do
   prompt "Your monthly payment is $#{result(amount, interest, duration)}"
 
   prompt "Do you want to calculate more? (Y for more)"
-  answer = gets.chomp
+  again = gets.chomp
 
-  break unless answer.downcase.start_with?("y")
+  break unless again.downcase.start_with?("y")
 end
